@@ -1,34 +1,18 @@
-<script setup lang="ts">
-import ModeToggle from './ModeToggle.vue'
-
-const links = [
-    { to: "/", label: "Home" },
-    { to: "/blog", label: "Knowledge Hub" },
-    { to: "/projects", label: "Student Projects" },
-    { to: "/lms", label: "LMS" },
-    { to: "/categories", label: "Categories" },
-    { to: "/about", label: "About SMK SIJA" },
-];
-</script>
-
 <template>
-  <div>
-    <div class="flex flex-row items-center justify-between px-2 py-1">
-      <nav class="flex gap-4 text-lg">
-        <NuxtLink
-          v-for="link in links"
-          :key="link.to"
-          :to="link.to"
-          class="text-foreground hover:text-primary"
-          active-class="text-primary font-semibold"
-        >
-          {{ link.label }}
-        </NuxtLink>
+  <header class="bg-gray-800 text-white p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <div class="text-xl font-bold">SMK SIJA</div>
+      <nav class="flex space-x-4">
+        <a href="/" class="hover:text-blue-400">Home</a>
+        <a href="/blog" class="hover:text-blue-400">Blog</a>
+        <a href="/projects" class="hover:text-blue-400">Projects</a>
+        <a href="/lms" class="hover:text-blue-400">LMS</a>
+        <a href="/admin/login" class="hover:text-red-400">Admin</a>
       </nav>
-      <div class="flex items-center gap-2">
-        <ModeToggle />
-      </div>
     </div>
     <USeparator />
-  </div>
+  </header>
 </template>
+
+<script setup>
+</script>

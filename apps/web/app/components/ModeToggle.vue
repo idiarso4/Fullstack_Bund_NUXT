@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, computed } from "vue";
+import { ref, computed, onMounted, watch } from "vue";
 
 // Simple dark mode toggle with dark as default
 const isDarkMode = ref(true) // Default to dark mode
