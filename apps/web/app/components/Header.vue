@@ -3,7 +3,11 @@ import ModeToggle from './ModeToggle.vue'
 
 const links = [
     { to: "/", label: "Home" },
-    { to: "/todos", label: "Todos" },
+    { to: "/blog", label: "Knowledge Hub" },
+    { to: "/projects", label: "Student Projects" },
+    { to: "/lms", label: "LMS" },
+    { to: "/categories", label: "Categories" },
+    { to: "/about", label: "About SMK SIJA" },
 ];
 </script>
 
